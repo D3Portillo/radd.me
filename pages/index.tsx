@@ -1,24 +1,36 @@
 import { Fragment } from "react"
 import Image from "next/image"
-import { ConnectButton } from "@rainbow-me/rainbowkit"
+
+import { HiArrowRight } from "react-icons/hi"
 import SeoTags from "@/components/SeoTags"
+import asset_rock from "@/assets/rock-on.gif"
 
 export default function Home() {
   return (
     <Fragment>
       <SeoTags />
-      <main className="min-h-screen p-8">
-        <h1 className="text-[calc(3vw+2rem)] font-bold mb-2">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <ConnectButton />
+      <main className="min-h-screen p-8 max-w-screen-xl mx-auto flex items-center">
+        <section className="max-w-2xl">
+          <h1 className="text-5xl font-bold">
+            A place for buildors to showcase their skills
+          </h1>
+          <p className="text-zinc-500 text-lg mt-2 max-w-lg">
+            Share with anyone the Web3 projects you are shiping. This is the
+            platform for software crafters.
+          </p>
+          <div className="flex items-center mt-8">
+            <button className="bg-violet-700 flex items-center gap-2 text-lg px-4 py-3 rounded-lg">
+              <span>Get started now</span>
+              <HiArrowRight />
+            </button>
+          </div>
+        </section>
+        <section className="flex-grow flex justify-center">
+          <figure>
+            <Image src={asset_rock} alt="🤘" />
+          </figure>
+        </section>
       </main>
-      <footer className="p-8 flex justify-center border-t">
-        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-          Powered by{" "}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
     </Fragment>
   )
 }

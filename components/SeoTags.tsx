@@ -1,13 +1,14 @@
 import { useMemo } from "react"
 import { NextSeo } from "next-seo"
 
-const BASE_URL = "https://d3portillo.me"
+const BASE_URL = "https://radd.me"
 const TWITTER_HANDLE = "d3portillo"
 export const DEFAULT_SEO = {
-  title: "D3Portillo / Template NextJs ⚡",
+  title: "Be-Radd / Get Started",
   url: BASE_URL,
   imageURL: `${BASE_URL}/seo.png`,
-  description: "A template repo that hosts my day-to-day used tech stack.",
+  description:
+    "Share with anyone the Web3 projects you are shiping. This is the platform for software crafters 🤘.",
 }
 
 type SeoDefinitions = typeof DEFAULT_SEO
