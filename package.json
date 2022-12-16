@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^13.0.6",
-    "@rainbow-me/rainbowkit": "^0.8.0",
+    "@rainbow-me/rainbowkit": "^0.8.1",
     "ethers": "^5.7.2",
     "next": "^13.0.6",
     "next-seo": "^5.15.0",
@@ -18,7 +18,7 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.6.0",
-    "wagmi": "^0.8.6"
+    "wagmi": "^0.9.4"
   },
   "devDependencies": {
     "@types/node": "18.11.9",
