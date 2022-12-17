@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { HiArrowRight } from "react-icons/hi"
+import Section from "@/components/layout/Section"
 import SeoTags from "@/components/SeoTags"
 import asset_rock from "@/assets/rock-on.gif"
 import asset_rock_blur_data from "@/assets/rock-on-blur-data.png"
@@ -11,9 +12,9 @@ export default function Home() {
   return (
     <Fragment>
       <SeoTags />
-      <main className="min-h-screen p-8 max-w-screen-lg mx-auto flex items-center">
+      <Section className="min-h-screen py-8 flex items-center">
         <section className="max-w-lg z-10 mb-12 md:mb-0">
-          <h1 className="leading-none text-[2.75rem] md:text-5xl font-bold">
+          <h1>
             The place to showcase your{" "}
             <span className="text-pink-400">buildor</span> skills 🚀
           </h1>
@@ -42,7 +43,7 @@ export default function Home() {
             />
           </figure>
         </section>
-      </main>
+      </Section>
     </Fragment>
   )
 }
