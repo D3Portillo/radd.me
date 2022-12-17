@@ -7,7 +7,7 @@ export const DEFAULT_SEO = {
   title: "Be-Radd / Get Started",
   url: BASE_URL,
   imageURL: `${BASE_URL}/seo.png`,
-  description: "A place for buildors to showcase their skills 🚀.",
+  description: "Be-Radd. The in-bio platform for software crafters.",
 }
 
 type SeoDefinitions = typeof DEFAULT_SEO
