@@ -12,14 +12,15 @@ export default function Home() {
     <Fragment>
       <SeoTags />
       <main className="min-h-screen p-8 max-w-screen-lg mx-auto flex items-center">
-        <section className="max-w-2xl">
-          <h1 className="text-5xl font-bold">
-            A place for <span className="text-pink-400">buildors</span> to
-            showcase their skills 🚀
+        <section className="max-w-lg z-10 mb-12 md:mb-0">
+          <h1 className="leading-none text-[2.75rem] md:text-5xl font-bold">
+            The place to showcase your{" "}
+            <span className="text-pink-400">buildor</span> skills 🚀
           </h1>
-          <p className="text-zinc-500 text-lg mt-2 max-w-lg">
-            The platform for software crafters. Share with everyone the Web3
-            projects you are shiping.
+          <p className="text-zinc-500 md:text-lg mt-2">
+            Connect. Share with everyone what you are building.
+            <br className="hidden md:inline" /> The in-bio platform for software
+            crafters
           </p>
           <div className="flex items-center mt-12">
             <Link
@@ -31,7 +32,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
-        <section className="flex-grow flex justify-center">
+        <section className="fixed md:relative bottom-0 right-0 translate-x-[25%] translate-y-[15%] md:translate-x-0 md:translate-y-0 flex-grow flex justify-end">
           <figure>
             <Image
               placeholder="blur"
