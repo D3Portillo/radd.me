@@ -1,9 +1,13 @@
+import type { PublicShareElement } from "@/types/shared"
+
+import { classnames } from "@/lib/helpers"
+
 import { MOCK_USER_SOCIAL_LINKS } from "./models/socialMedia"
 import getSocialMediaLink from "./getSocialMediaLink"
 
-function UserAbout() {
+function UserAbout({ isPublic }: PublicShareElement) {
   return (
-    <section className="w-full mt-8">
+    <section className={classnames("w-full", isPublic || "mt-8")}>
       <div className="max-w-lg mx-auto">
         <div className="flex justify-center">
           <figure className="bg-white rounded-full overflow-hidden w-20 h-20"></figure>

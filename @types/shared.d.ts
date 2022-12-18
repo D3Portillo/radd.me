@@ -5,6 +5,8 @@ export type PropsWithChildrenCx<Props = unknown> = PropsWithChildren<Props> & {
   className?: string
 }
 
+export type PublicShareElement = { isPublic?: boolean }
+
 export type UserSocialLink = {
   type: SocialPlatforms
   url: string
